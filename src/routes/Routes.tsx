@@ -5,7 +5,6 @@ import Home from "../pages/Home";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
 
-
 import AdminLayout from "@/Layout/AdminLayout";
 
 import AdminDashboardPage from "@/pages/Admin/AdminDashboardPage";
@@ -13,15 +12,14 @@ import SettingsPage from "@/pages/Admin/SettingsPage";
 import ClientDashboardPage from "@/pages/Client/ClientDashboardPage";
 import ClientLayout from "@/Layout/ClientLayout";
 
-
-
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
       {
-        path: "/",
+        // path: "/",
+        index: true,
         element: <Home />,
       },
 
@@ -57,7 +55,7 @@ const routes = createBrowserRouter([
     children: [
       { index: true, element: <AdminDashboardPage /> },
       { path: "dashboard", element: <AdminDashboardPage /> },
-      
+
       { path: "settings", element: <SettingsPage /> },
     ],
   },

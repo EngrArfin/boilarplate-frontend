@@ -1,9 +1,9 @@
-import Login from "./Login";
+import Hero from "@/components/Home/Hero/Hero";
 
 const Home = () => {
   return (
     <div>
-      <Login />
+      <Hero />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import heroImage from "@/assets/photo/music.png";
 
 import { Link } from "react-router-dom";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <div>
       <div className="bg-gradient-to-br from-teal-500 to-blue-600 mt-[70px]">
